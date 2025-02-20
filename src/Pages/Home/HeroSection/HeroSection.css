@@ -1,0 +1,83 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10%;
+  background-color: var(--bg-shade);
+  height: 100vh; /* Full viewport height */
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-content {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.hero-greeting {
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.hero-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-role {
+  font-size: 24px;
+  color: var(--heading-color);
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: darken(var(--primary), 10%);
+  color: lightgray;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 150px; /* Adjust image size on small screens */
+    height: 150px;
+  }
+}

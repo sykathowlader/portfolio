@@ -1,0 +1,46 @@
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-menu-buttons button {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation-menu-buttons button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: orange; /* Adjust border color */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navigation-menu-buttons button:hover::after {
+  width: 100%;
+  left: 0;
+}
