@@ -1,12 +1,57 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-shade);
+  margin-top: 10px;
+}
+
 .navigation-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navigation-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust the spacing between the menu icon and text */
+  justify-content: center;
+}
+
+.navigation-home {
+  font-weight: 700;
+  font-size: 24px;
+  border: none;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 1;
+}
+.navigation-home a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+
+.navigation-home a:hover {
+  color: var(--primary);
 }
 
 .navigation-menu {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.navigation-menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .navigation-menu-buttons {
@@ -16,6 +61,7 @@
 
 .navigation-icons {
   display: flex;
+  gap: 20px;
 }
 
 .navigation-menu-buttons button {
@@ -43,4 +89,63 @@
 .navigation-menu-buttons button:hover::after {
   width: 100%;
   left: 0;
+}
+
+.navigation-icon-search svg {
+  font-size: 25px;
+}
+
+.navigation-icon-dark-mode svg {
+  font-size: 25px;
+}
+
+/* Full-screen side menu */
+.navigation-slider {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50px; /* Starts just below the navbar */
+  left: 0;
+  width: 100%; /* Full screen width */
+  height: calc(100% - 50px); /* Full height minus navbar */
+  background: #f4f4f4;
+  padding: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Show the navigation slider when the menu is open */
+.navigation-slider.open {
+  display: flex;
+}
+
+.navigation-slider button {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  color: black;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navigation-slider button:hover {
+  background: orange;
+  color: white;
+}
+
+/* Media query for smaller screen */
+@media screen and (max-width: 768px) {
+  .navigation-menu-buttons {
+    display: none; /* Hide the navigation menu buttons on smaller screens */
+  }
+}
+/* Media query for larger screen*/
+@media screen and (min-width: 769px) {
+  .navigation-menu-icon {
+    display: none; /* Hide the hamburger menu icon on larger screens */
+  }
+  .navigation-slider {
+    display: none !important; /* Hide the slider on larger screens */
+  }
 }

@@ -1,0 +1,95 @@
+.about-me {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.description,
+.info {
+  padding: 20px;
+  width: 50%;
+  min-height: 150px;
+}
+
+.description {
+  padding: 20px;
+
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  margin-bottom: 15px;
+}
+
+.description p span {
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.languages,
+.technologies {
+  padding: 10px;
+}
+
+.languages h2,
+.technologies h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.languages-list,
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.languages-list button,
+.technologies-list button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary); /* Green background */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: default;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.languages-list button:hover,
+.technologies-list button:hover {
+  background-color: #b13a06; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.languages-list,
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
