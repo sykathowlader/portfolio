@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 10%;
+  padding: 10px 10%;
+  padding-bottom: 0px;
   background-color: var(--bg-shade);
   height: 100vh; /* Full viewport height */
 }
@@ -61,11 +62,16 @@
 .btn--primary {
   background-color: var(--primary);
   color: white;
+  padding: 10px 20px; /* Add some padding to make the button size larger */
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 .btn--primary:hover {
-  background-color: darken(var(--primary), 10%);
-  color: lightgray;
+  background-color: #d82f2f; /* Manually choose a darker shade of the primary color */
+  color: white;
+  transform: scale(1.1); /* Increase the button size slightly */
 }
 
 @media (max-width: 768px) {

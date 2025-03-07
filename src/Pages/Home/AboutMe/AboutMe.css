@@ -1,13 +1,14 @@
 .about-me {
   text-align: center;
   padding: 20px;
+  padding-top: 0px;
 }
 
-h1 {
+.about-me h1 {
   text-align: center;
 }
 
-section {
+.about-me section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -92,4 +93,16 @@ section {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me section {
+    flex-wrap: wrap;
+  }
+  .description,
+  .info {
+    padding: 20px;
+    width: 100%;
+    min-height: 150px;
+  }
 }

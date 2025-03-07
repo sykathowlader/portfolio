@@ -44,7 +44,7 @@ export default function NavBar() {
               <button>Experience</button>
             </div>
             <div className="navigation-education">
-              <button>Edication</button>
+              <button>Education</button>
             </div>
             <div className="navigation-more">
               <button>More</button>
