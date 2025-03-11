@@ -14,6 +14,10 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
 
+  const moveToTopPage = () => {
+    window.scrollTo(0, 0); // Scrolls to top immediately
+  };
+
   return (
     <nav className="navigation">
       <div className="navigation-container">
@@ -23,13 +27,17 @@ export default function NavBar() {
             {menuOpen ? <MdClose size={30} /> : <MdMenu size={30} />}
           </div>
           <div className="navigation-home">
-            <Link to="/">Sykat Howlader</Link>
+            <Link to="/" onClick={moveToTopPage}>
+              Sykat Howlader
+            </Link>
           </div>
         </div>
 
         {/* Left Panel Slider for small screens */}
         <div className={`navigation-slider ${menuOpen ? "open" : ""}`}>
-          <button>Projects</button>
+          <a href="#projects">
+            <button onClick={toggleMenu}>Projects</button>
+          </a>
           <button>Experience</button>
           <button>Education</button>
           <button>More</button>
@@ -38,17 +46,21 @@ export default function NavBar() {
         <div className={`navigation-menu`}>
           <div className={`navigation-menu-buttons ${menuOpen ? "open" : ""}`}>
             <div className="navigation-projects">
-              <button>Projects</button>
+              <Link to="/#projects">
+                <button>Projects</button>
+              </Link>
             </div>
             <div className="navigation-experience">
               <button>Experience</button>
             </div>
             <div className="navigation-education">
-              <button>Education</button>
+              <Link to="/education" onClick={moveToTopPage}>
+                <button>Education</button>
+              </Link>
             </div>
-            <div className="navigation-more">
-              <button>More</button>
-            </div>
+            <Link to="/certifications" onClick={moveToTopPage}>
+              <button>Certifications</button>
+            </Link>
           </div>
           <div className="navigation-icons">
             <div className="navigation-icon-search">

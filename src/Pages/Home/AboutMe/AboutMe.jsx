@@ -66,7 +66,8 @@ export default function AboutMe() {
               <button>Pandas</button>
               <button>Numpy</button>
               <button>Open CV</button>
-              <button>Tensor Flow</button>
+              <button>PyTorch</button>
+              <button>Scikit-learn</button>
             </div>
           </div>
         </div>

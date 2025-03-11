@@ -22,7 +22,7 @@ import cvPersonal from "../../../assets/project_images/computer_vision/personal.
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1>Projects</h1>
       <Project
         linkGitHub={"https://github.com/sykathowlader/study_buddy_fl"}
@@ -72,8 +72,14 @@ export default function Projects() {
             src: "Ko88Wd4Ttqw",
           },
         ]}
-        description={"Computer vision"}
-        languageTechnology={["OpenCv", "Pandas"]}
+        description={`For my Computer Vision module coursework, I developed and evaluated three 
+          machine learning models to predict face mask usage from images. The project involved 
+          classifying faces into three categories: no mask, correctly worn mask, and improperly 
+          worn mask. I implemented a Support Vector Machine (SVM) and Multi-layer Perceptron (MLP) 
+          using HOG feature descriptors, alongside a Convolutional Neural Network (CNN). 
+          Technologies used included Python, OpenCV for preprocessing, scikit-learn 
+          for SVM and MLP, and PyTorch for the CNN. The CNN achieved the highest accuracy at 92%, though all models faced challenges with class imbalance.`}
+        languageTechnology={["Python", "OpenCv", "Scikit-learn", "PyTorch"]}
       ></Project>
       <Project
         linkGitHub={"https://github.com/sykathowlader/air_via_system"}

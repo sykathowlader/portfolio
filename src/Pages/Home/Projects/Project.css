@@ -61,13 +61,7 @@
   padding-right: 40px;
 }
 .project-description-container h2 {
-  margin-bottom: 30px;
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.project-description-container h2:hover {
-  color: var(--primary); /* Use CSS variable for primary color */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-bottom: 20px;
 }
 
 .project-description-container p {

@@ -1,0 +1,154 @@
+/* EducationPage.css */
+.education-page {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.education-container {
+  max-width: 1000px; /* Wider but still readable */
+  margin: 0 auto;
+  padding: 30px 20px; /* More padding for breathing room */
+}
+
+.education-title {
+  text-align: center;
+  font-size: 2.8rem; /* Slightly larger for impact */
+  color: #1a2a44; /* Dark navy for contrast */
+  margin: 40px 0;
+  margin-top: 0px;
+  font-weight: 700; /* Bold title */
+}
+
+/* Card Styling */
+.education-card {
+  display: flex;
+  align-items: flex-start; /* Aligns content to top */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  margin-bottom: 40px; /* More space between cards */
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.education-logo {
+  width: 120px; /* Slightly larger for clarity */
+  height: 120px;
+  object-fit: contain;
+  margin-right: 25px; /* More space between logo and text */
+  border-radius: 8px; /* Rounded edges */
+}
+
+/* Details Styling */
+.education-details {
+  flex: 1; /* Takes remaining space */
+}
+
+.education-details h2 {
+  font-size: 1.9rem; /* Bold but not overwhelming */
+  color: #1a2a44; /* Dark navy */
+  margin: 0 0 8px; /* Tight spacing */
+  font-weight: 600;
+}
+
+.degree {
+  font-size: 1.2rem;
+  color: #5e6e88; /* Muted blue-gray */
+  font-style: italic;
+  margin: 0 0 6px;
+}
+
+.location {
+  font-size: 1rem;
+  color: #6b7280; /* Softer gray */
+  margin: 0 0 6px;
+}
+
+.period {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500; /* Slightly bold for emphasis */
+  margin: 0 0 10px;
+}
+
+.edu-des {
+  font-size: 1rem;
+  color: #4b5563; /* Darker gray for readability */
+  line-height: 1.6; /* More spacing between lines */
+  margin: 0 0 12px; /* Space before highlights */
+  max-width: 600px; /* Limits text width to avoid overwhelm */
+}
+
+.highlights {
+  list-style-type: none; /* No bullets for a cleaner look */
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px; /* Space for custom bullet */
+}
+
+.highlights li:before {
+  content: "•"; /* Custom bullet */
+  color: #3b82f6; /* Bright blue accent */
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column; /* Stack logo and details */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .education-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .education-title {
+    font-size: 2.2rem;
+  }
+
+  .education-details h2 {
+    font-size: 1.6rem;
+  }
+
+  .edu-des {
+    max-width: 100%; /* Full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .education-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .education-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .degree,
+  .location,
+  .period,
+  .edu-des,
+  .highlights li {
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+}
