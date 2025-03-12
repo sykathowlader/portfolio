@@ -22,9 +22,9 @@ export default function Certification({
         <h3 className="certification-title" onClick={handleClick}>
           {title || ""}
           {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <span>
               <LiaExternalLinkAltSolid className="title-svg" />
-            </a>
+            </span>
           )}
         </h3>
         <p className="certification-description">{description || ""}</p>

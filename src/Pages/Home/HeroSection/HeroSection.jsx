@@ -2,6 +2,13 @@ import "./HeroSection.css";
 import profileImage from "../../../assets/img/profile.jpg";
 
 export default function HeroSection() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="heroSection" className="hero-section">
       <div className="hero-container">
@@ -18,8 +25,18 @@ export default function HeroSection() {
 
           {/* Buttons */}
           <div className="hero-buttons">
-            <button className="btn btn--primary">Projects</button>
-            <button className="btn btn--primary">About</button>
+            <button
+              className="btn btn--primary"
+              onClick={() => scrollToSection("projects")}
+            >
+              Projects
+            </button>
+            <button
+              className="btn btn--primary"
+              onClick={() => scrollToSection("about-me")}
+            >
+              About Me
+            </button>
           </div>
         </div>
       </div>

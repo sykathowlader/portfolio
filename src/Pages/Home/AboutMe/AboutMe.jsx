@@ -2,7 +2,7 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
-    <div className="about-me">
+    <div className="about-me" id="about-me">
       <h1>About Me</h1>
       <section>
         <div className="description">

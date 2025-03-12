@@ -5,6 +5,7 @@ import googleDataFinal from "../../assets/certifications/google_data/google_data
 import googleR from "../../assets/certifications/google_data/r_programming.jpeg";
 import javascript from "../../assets/certifications/javascript/java_script.jpg";
 import aws from "../../assets/certifications/aws/aws.png";
+import fullStack from "../../assets/certifications/codecademy/full_stack.png";
 
 export default function CertificationPage() {
   return (
@@ -13,6 +14,30 @@ export default function CertificationPage() {
       <div className="certification-page">
         <h1 className="certifications-title">Explore my certifications</h1>
         <div className="certifications">
+          <Certification
+            imageUrl={fullStack}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/5f7e644d833c070013ef47c4"
+            }
+            title={"Full-Stack Engineer Career Path"}
+            description={`I completed the Full-Stack Engineer Path course, a 150-hour program 
+            where I gained comprehensive knowledge of front-end and back-end development. 
+            The course covered key areas such as HTML, CSS, JavaScript, React, Redux, Node.js, 
+            Express.js, PostgreSQL, and API development. I also explored web security 
+            fundamentals and revisited data structures and algorithms.`}
+            skills={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "Redux",
+              "Node.js",
+              "Express.js",
+              "PostgreSQL",
+              "API development",
+              "web securities",
+            ]}
+          ></Certification>
           <Certification
             imageUrl={javascript}
             link={

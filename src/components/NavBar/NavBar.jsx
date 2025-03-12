@@ -35,12 +35,16 @@ export default function NavBar() {
 
         {/* Left Panel Slider for small screens */}
         <div className={`navigation-slider ${menuOpen ? "open" : ""}`}>
-          <a href="#projects">
-            <button onClick={toggleMenu}>Projects</button>
-          </a>
-          <button>Experience</button>
-          <button>Education</button>
-          <button>More</button>
+          <Link to="/#projects" onClick={toggleMenu}>
+            <button>Projects</button>
+          </Link>
+
+          <Link to="/education" onClick={[moveToTopPage, toggleMenu]}>
+            <button>Education</button>
+          </Link>
+          <Link to="/certifications" onClick={moveToTopPage}>
+            <button>Certifications</button>
+          </Link>
         </div>
 
         <div className={`navigation-menu`}>
@@ -50,9 +54,7 @@ export default function NavBar() {
                 <button>Projects</button>
               </Link>
             </div>
-            <div className="navigation-experience">
-              <button>Experience</button>
-            </div>
+
             <div className="navigation-education">
               <Link to="/education" onClick={moveToTopPage}>
                 <button>Education</button>
@@ -62,14 +64,12 @@ export default function NavBar() {
               <button>Certifications</button>
             </Link>
           </div>
-          <div className="navigation-icons">
-            <div className="navigation-icon-search">
-              <CiSearch /> {/* React Icons search icon */}
-            </div>
+          {/*  <div className="navigation-icons">
+            
             <div className="navigation-icon-dark-mode">
               <MdBrightness3 />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
