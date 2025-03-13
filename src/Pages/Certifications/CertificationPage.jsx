@@ -6,6 +6,7 @@ import googleR from "../../assets/certifications/google_data/r_programming.jpeg"
 import javascript from "../../assets/certifications/javascript/java_script.jpg";
 import aws from "../../assets/certifications/aws/aws.png";
 import fullStack from "../../assets/certifications/codecademy/full_stack.png";
+import jQuery from "../../assets/certifications/codecademy/jQuery.png";
 
 export default function CertificationPage() {
   return (
@@ -37,6 +38,17 @@ export default function CertificationPage() {
               "API development",
               "web securities",
             ]}
+          ></Certification>
+          <Certification
+            imageUrl={jQuery}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/0becf7c1cd2bd715f24331dddd23425a"
+            }
+            title={"Learn jQuery"}
+            description={
+              "I completed the jQuery course offered by Codecademy, mastering effects, event handling, style manipulation, and DOM traversal to create dynamic and interactive web pages."
+            }
+            skills={["jQuery"]}
           ></Certification>
           <Certification
             imageUrl={javascript}

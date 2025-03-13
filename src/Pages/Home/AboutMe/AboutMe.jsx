@@ -55,6 +55,7 @@ export default function AboutMe() {
               <button>Node.js</button>
               <button>Express.js</button>
               <button>Redux</button>
+              <button>jQuery</button>
               <button>PostgreSQL</button>
               <button>Tailwind CSS</button>
               <button>Flutter</button>
