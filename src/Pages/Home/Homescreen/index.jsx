@@ -18,7 +18,6 @@ export default function Home() {
   }, [hash]);
   return (
     <>
-      <NavBar></NavBar>
       <HeroSection></HeroSection>
       <AboutMe></AboutMe>
       <Projects></Projects>

@@ -1,6 +1,5 @@
 import Certification from "./Certification";
 import "./CertificationPage.css";
-import NavBar from "../../components/NavBar/NavBar";
 import googleDataFinal from "../../assets/certifications/google_data/google_data.jpeg";
 import googleR from "../../assets/certifications/google_data/r_programming.jpeg";
 import javascript from "../../assets/certifications/javascript/java_script.jpg";
@@ -11,7 +10,6 @@ import jQuery from "../../assets/certifications/codecademy/jQuery.png";
 export default function CertificationPage() {
   return (
     <>
-      <NavBar></NavBar>
       <div className="certification-page">
         <h1 className="certifications-title">Explore my certifications</h1>
         <div className="certifications">

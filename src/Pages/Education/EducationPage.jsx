@@ -1,12 +1,11 @@
 import "./EducationPage.css";
-import NavBar from "../../components/NavBar/NavBar";
+
 import volta from "../../assets/project_images/education/volta.png";
 import city from "../../assets/project_images/education/city.png";
 
 export default function () {
   return (
     <div className="education-page">
-      <NavBar />
       <div className="education-container">
         <h1 className="education-title">My Education</h1>
 
