@@ -27,14 +27,14 @@
   font-weight: 700;
   font-size: 24px;
   border: none;
-  color: black;
-  background-color: transparent;
+  /*color: black;
+  background-color: transparent;*/
   text-decoration: none;
   line-height: 1;
 }
 .navigation-home a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   transition: color 0.3s ease;
 }
 
@@ -45,6 +45,7 @@
 .navigation-menu {
   display: flex;
   align-items: center;
+
   gap: 20px;
 }
 
@@ -52,6 +53,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: var(--black);
 }
 
 .navigation-menu-buttons {
@@ -59,15 +61,10 @@
   gap: 20px;
 }
 
-.navigation-icons {
-  display: flex;
-  gap: 20px;
-}
-
 .navigation-menu-buttons button {
   background: transparent;
   border: none;
-  color: black;
+  color: var(--black);
   font-size: 16px;
   padding: 10px 15px;
   cursor: pointer;
@@ -79,7 +76,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: orange; /* Adjust border color */
+  background: var(--primary); /* Adjust border color */
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -95,8 +92,11 @@
   font-size: 25px;
 }
 
-.navigation-icon-dark-mode svg {
-  font-size: 25px;
+.navigation-icon-dark-mode {
+  display: flex;
+  align-items: center; /* Ensure icon is centered within its container */
+  cursor: pointer; /* If it’s clickable */
+  color: var(--black);
 }
 
 /* Full-screen side menu */
@@ -107,7 +107,7 @@
   left: 0;
   width: 100%; /* Full screen width */
   height: calc(100% - 50px); /* Full height minus navbar */
-  background: #f4f4f4;
+  background: var(--bg-shade);
   padding: 20px;
   flex-direction: column;
   gap: 15px;
@@ -125,13 +125,13 @@
   font-size: 18px;
   text-align: left;
   cursor: pointer;
-  color: black;
+  color: var(--black);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navigation-slider button:hover {
-  background: orange;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
 }
 
 /* Media query for smaller screen */

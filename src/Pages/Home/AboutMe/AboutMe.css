@@ -7,6 +7,7 @@
   padding-top: 0px;
   min-height: 100vh; /* Use min-height instead of height for flexibility */
   box-sizing: border-box; /* Ensure padding doesn’t overflow */
+  color: var(--black);
 }
 
 .about-me h1 {
@@ -62,7 +63,7 @@
 .technologies h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--heading-color);
 }
 
 .languages-list,
@@ -79,7 +80,7 @@
   border: none;
   border-radius: 30px;
   background-color: var(--primary);
-  color: white;
+  color: var(--white);
   font-size: 16px;
   font-weight: bold;
   cursor: default;
@@ -88,7 +89,7 @@
 
 .languages-list button:hover,
 .technologies-list button:hover {
-  background-color: #b13a06;
+  background-color: var(--primary-hover);
   transform: scale(1.05);
 }
 

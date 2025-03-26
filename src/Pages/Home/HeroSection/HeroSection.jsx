@@ -1,6 +1,8 @@
 import "./HeroSection.css";
 import profileImage from "../../../assets/img/profile.jpg";
 
+import Socials from "../../../components/socials/Socials";
+
 export default function HeroSection() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -22,6 +24,7 @@ export default function HeroSection() {
           <p className="hero-greeting">Hi, I'm</p>
           <h1 className="hero-name">Sykat Howlader</h1>
           <h2 className="hero-role">Full-Stack Developer</h2>
+          <Socials></Socials>
 
           {/* Buttons */}
           <div className="hero-buttons">

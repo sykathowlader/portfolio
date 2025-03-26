@@ -1,4 +1,5 @@
 .projects h1 {
+  color: var(--black);
   text-align: center;
   margin-bottom: 40px;
   margin-top: 60px;

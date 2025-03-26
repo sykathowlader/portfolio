@@ -1,22 +1,42 @@
 import "./NavBar.css";
-import { Link } from "react-router-dom";
-import { CiSearch } from "react-icons/ci";
+import { Link, useLocation } from "react-router-dom";
 import { MdBrightness3 } from "react-icons/md";
+import { TbBrightnessUp } from "react-icons/tb";
 import { MdMenu } from "react-icons/md";
-import { useState } from "react";
 import { MdClose } from "react-icons/md";
+import { useState, useEffect } from "react";
+import { useTheme } from "../../context/ThemeContext";
 
 export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu visibility
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const { isDarkMode, toggleDarkMode } = useTheme(); // Access theme context
 
-  // Toggle menu visibility when menu icon is clicked
+  // Toggle menu visibility
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Scroll to top of the page
   const moveToTopPage = () => {
-    window.scrollTo(0, 0); // Scrolls to top immediately
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  // Scroll to projects section
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+    if (menuOpen) toggleMenu();
+  };
+
+  // Handle hash change when route changes
+  useEffect(() => {
+    if (location.hash === "#projects") {
+      scrollToProjects();
+    }
+  }, [location]);
 
   return (
     <nav className="navigation">
@@ -35,26 +55,37 @@ export default function NavBar() {
 
         {/* Left Panel Slider for small screens */}
         <div className={`navigation-slider ${menuOpen ? "open" : ""}`}>
-          <Link to="/#projects" onClick={toggleMenu}>
+          <Link to="/#projects" onClick={scrollToProjects}>
             <button>Projects</button>
           </Link>
-
-          <Link to="/education" onClick={[moveToTopPage, toggleMenu]}>
+          <Link
+            to="/education"
+            onClick={() => {
+              moveToTopPage();
+              toggleMenu();
+            }}
+          >
             <button>Education</button>
           </Link>
-          <Link to="/certifications" onClick={moveToTopPage}>
+          <Link
+            to="/certifications"
+            onClick={() => {
+              moveToTopPage();
+              toggleMenu();
+            }}
+          >
             <button>Certifications</button>
           </Link>
         </div>
 
-        <div className={`navigation-menu`}>
+        {/* Desktop Menu */}
+        <div className="navigation-menu">
           <div className={`navigation-menu-buttons ${menuOpen ? "open" : ""}`}>
             <div className="navigation-projects">
-              <Link to="/#projects">
+              <Link to="/#projects" onClick={scrollToProjects}>
                 <button>Projects</button>
               </Link>
             </div>
-
             <div className="navigation-education">
               <Link to="/education" onClick={moveToTopPage}>
                 <button>Education</button>
@@ -64,12 +95,14 @@ export default function NavBar() {
               <button>Certifications</button>
             </Link>
           </div>
-          {/*  <div className="navigation-icons">
-            
-            <div className="navigation-icon-dark-mode">
-              <MdBrightness3 />
-            </div>
-          </div> */}
+
+          <div className="navigation-icon-dark-mode" onClick={toggleDarkMode}>
+            {isDarkMode ? (
+              <TbBrightnessUp size={30} />
+            ) : (
+              <MdBrightness3 size={30} />
+            )}
+          </div>
         </div>
       </div>
     </nav>

@@ -1,0 +1,36 @@
+/* Footer.css */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Pushes children to opposite ends */
+  align-items: center; /* Vertically centers the content */
+  padding: 1rem 2rem; /* Adds some padding for breathing room */
+  background-color: var(
+    --bg-shade
+  ); /* Light gray background - customize as needed */
+  border-top: 1px solid #e0e0e0; /* Subtle top border */
+}
+
+/* Style the paragraph (All rights reserved text) */
+.footer p {
+  margin: 0; /* Removes default paragraph margin */
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: var(--black); /* Dark gray - match your theme */
+}
+
+/* Ensure Socials stays on the right */
+.footer .socials {
+  margin: 0; /* Override any margin from Socials.css if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center-align text */
+    padding: 1rem;
+  }
+
+  .footer p {
+    margin-bottom: 1rem; /* Add space between text and socials */
+  }
+}

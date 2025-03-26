@@ -12,18 +12,18 @@
 
 .education-title {
   text-align: center;
-  font-size: 2.8rem; /* Slightly larger for impact */
-  color: #1a2a44; /* Dark navy for contrast */
+  font-size: 2.8rem;
+  color: var(--dark-navy);
   margin: 40px 0;
   margin-top: 0px;
-  font-weight: 700; /* Bold title */
+  font-weight: 700;
 }
 
 /* Card Styling */
 .education-card {
   display: flex;
   align-items: flex-start; /* Aligns content to top */
-  background-color: #fff;
+  background-color: var(--card);
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
   margin-bottom: 40px; /* More space between cards */
@@ -51,34 +51,34 @@
 
 .education-details h2 {
   font-size: 1.9rem; /* Bold but not overwhelming */
-  color: #1a2a44; /* Dark navy */
+  color: var(--heading-color); /* Dark navy */
   margin: 0 0 8px; /* Tight spacing */
   font-weight: 600;
 }
 
 .degree {
   font-size: 1.2rem;
-  color: #5e6e88; /* Muted blue-gray */
+  color: var(--grey); /* Muted blue-gray */
   font-style: italic;
   margin: 0 0 6px;
 }
 
 .location {
   font-size: 1rem;
-  color: #6b7280; /* Softer gray */
+  color: var(--grey); /* Softer gray */
   margin: 0 0 6px;
 }
 
 .period {
   font-size: 1rem;
-  color: #6b7280;
+  color: var(--grey);
   font-weight: 500; /* Slightly bold for emphasis */
   margin: 0 0 10px;
 }
 
 .edu-des {
   font-size: 1rem;
-  color: #4b5563; /* Darker gray for readability */
+  color: var(--black); /* Darker gray for readability */
   line-height: 1.6; /* More spacing between lines */
   margin: 0 0 12px; /* Space before highlights */
   max-width: 600px; /* Limits text width to avoid overwhelm */
@@ -92,7 +92,7 @@
 
 .highlights li {
   font-size: 1rem;
-  color: #4b5563;
+  color: var(--grey);
   line-height: 1.5;
   margin-bottom: 8px;
   position: relative;
@@ -101,9 +101,11 @@
 
 .highlights li:before {
   content: "•"; /* Custom bullet */
-  color: #3b82f6; /* Bright blue accent */
+  color: var(--secondary); /* Bright blue accent */
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.2rem;
 }
 

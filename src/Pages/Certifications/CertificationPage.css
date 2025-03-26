@@ -14,7 +14,7 @@
 .certifications-title {
   text-align: center;
   font-size: 2.8rem; /* Slightly larger for impact */
-  color: #1a2a44; /* Dark navy for contrast */
+  color: var(--dark-navy); /* Dark navy for contrast */
   margin: 40px 0;
   margin-top: 0px;
   font-weight: 700; /* Bold title */

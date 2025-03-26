@@ -26,6 +26,8 @@
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-right: 20px;
 }
@@ -36,6 +38,7 @@
 }
 
 .hero-name {
+  color: var(--black);
   font-size: 36px;
   font-weight: 700;
   margin: 10px 0;
@@ -44,6 +47,7 @@
 .hero-role {
   font-size: 24px;
   color: var(--heading-color);
+  margin-bottom: 10px;
 }
 
 .hero-buttons {
@@ -64,7 +68,7 @@
 
 .btn--primary {
   background-color: var(--primary);
-  color: white;
+  color: var(--white);
   padding: 10px 20px; /* Add some padding to make the button size larger */
   border: none;
   border-radius: 5px;
@@ -72,8 +76,10 @@
 }
 
 .btn--primary:hover {
-  background-color: #d82f2f; /* Manually choose a darker shade of the primary color */
-  color: white;
+  background-color: var(
+    --primary-hover
+  ); /* Manually choose a darker shade of the primary color */
+  color: var(--white);
   transform: scale(1.1); /* Increase the button size slightly */
 }
 

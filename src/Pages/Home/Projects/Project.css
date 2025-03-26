@@ -40,7 +40,7 @@
 .prev-button,
 .next-button {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--white);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -55,7 +55,7 @@
 
 .project-description-container {
   width: 50%;
-
+  color: var(--black);
   display: flex;
   flex-direction: column;
   padding-right: 40px;
@@ -77,8 +77,8 @@
 }
 
 .description-buttons svg {
-  font-size: 30px; /* Increase the size of the icons */
-  color: #333; /* Set a default color */
+  font-size: 30px;
+  color: var(--heading-color);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
 }
@@ -95,7 +95,7 @@
 
 .lan-tech h3 {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--heading-color);
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -110,8 +110,8 @@
 }
 
 .lan-tech li {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--secondary);
+  color: var(--white);
   padding: 6px 12px;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -121,7 +121,7 @@
 }
 
 .lan-tech li:hover {
-  background-color: #0056b3;
+  background-color: var(--secondary-hover);
   transform: scale(1.1);
 }
 

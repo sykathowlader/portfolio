@@ -2,27 +2,24 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Homescreen/index";
-import EducationPage from "../src/Pages/Education/EducationPage";
-import CertificaionPage from "../src/Pages/Certifications/CertificationPage";
+import EducationPage from "./Pages/Education/EducationPage";
+import CertificationPage from "./Pages/Certifications/CertificationPage";
 import Layout from "./components/Layout";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          {/* Route for Home, Projects, Experience, Education, More */}
-          <Route path="/" element={<Home />} />
-          <Route path="/education" element={<EducationPage />} />
-          <Route path="/certifications" element={<CertificaionPage />} />
-
-          {/*
-        <Route path="/experience" element={<Experience />} />
-        
-        <Route path="/more" element={<More />} />*/}
-        </Routes>
-      </Layout>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/education" element={<EducationPage />} />
+            <Route path="/certifications" element={<CertificationPage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </ThemeProvider>
   );
 }
 

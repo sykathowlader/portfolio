@@ -1,9 +1,47 @@
 :root {
-  --primary: #ff5733; /* Change this to your desired primary color */
-  --secondary: rgb(39, 143, 170);
+  --primary: #ff5733;
+  --primary-hover: #e04e2e;
+  --secondary: #007bff;
+  --secondary-hover: #0056b3;
   --bg-shade: #f4f4f4;
   --heading-color: #333;
+  --black: #000;
+  --white: #fff;
+  --dark-navy: #1a2a44;
+  --grey: #5e6e88;
+  --card: #fff;
 }
+
+/*light theme
+--primary: #ff5733;
+  --primary-hover: #e04e2e;
+  --secondary: #007bff;
+  --secondary-hover: #0056b3;
+  --bg-shade: #f4f4f4;
+  --heading-color: #333;
+  --black: #000;
+  --white: #fff;
+  --dark-navy: #1a2a44;
+  --grey: #5e6e88;
+  --card: #fff;
+
+
+*/
+
+/*dark theme
+ --primary: #ff5733; 
+ --primary-hover: #e04e2e; 
+ --secondary: #1a73e8; 
+ --secondary-hover: #1662c4;
+ --bg-shade: #121212; 
+ --heading-color: #f0f0f0; 
+ --black: #d9d9d9;
+ --white: #fff; 
+ --dark-navy: #b5c8e6; 
+ --grey: #acb2bb;
+ --card: #3e3e3e;
+
+*/
 
 * {
   margin: 0;
