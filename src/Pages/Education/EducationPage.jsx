@@ -11,6 +11,29 @@ export default function () {
 
         <div className="education-card">
           <img
+            src={city}
+            alt="City, University of London Logo"
+            className="education-logo"
+          />
+          <div className="education-details">
+            <h2>City, University of London</h2>
+            <p className="degree">BSc Computer Science (First Class Honours)</p>
+            <p className="location">London, United Kingdom</p>
+            <p className="period">2021 - 2024</p>
+            <p className="edu-des">
+              My university experience provided me with a strong foundation in
+              both theoretical concepts and practical applications, providing me
+              with the skills to tackle complex problems effectively.
+            </p>
+
+            <ul className="highlights">
+              <li>Specialized in Java, Python, Artificial Intelligence</li>
+              <li>Key Focus: Data Structures, Algorithms</li>
+            </ul>
+          </div>
+        </div>
+        <div className="education-card">
+          <img
             src={volta}
             alt="Liceo Scientifico Alessandro Volta Logo"
             className="education-logo"
@@ -30,30 +53,6 @@ export default function () {
               <li>
                 Main Subjects include: Mathematics, Physics, Biology, Chemistry
               </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="education-card">
-          <img
-            src={city}
-            alt="City, University of London Logo"
-            className="education-logo"
-          />
-          <div className="education-details">
-            <h2>City, University of London</h2>
-            <p className="degree">BSc Computer Science (First Class Honours)</p>
-            <p className="location">London, United Kingdom</p>
-            <p className="period">2021 - 2024</p>
-            <p className="edu-des">
-              My university experience provided me with a strong foundation in
-              both theoretical concepts and practical applications, providing me
-              with the skills to tackle complex problems effectively.
-            </p>
-
-            <ul className="highlights">
-              <li>Specialized in Java, Python, Artificial Intelligence</li>
-              <li>Key Focus: Data Structures, Algorithms</li>
             </ul>
           </div>
         </div>
