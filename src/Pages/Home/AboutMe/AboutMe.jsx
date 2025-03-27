@@ -40,8 +40,10 @@ export default function AboutMe() {
               <button>HTML</button>
               <button>CSS</button>
               <button>JavaScript</button>
+
+              <button>PHP</button>
               <button>Java</button>
-              <button>C ++</button>
+              <button>C#</button>
               <button>Python</button>
               <button>Dart</button>
               <button>SQL</button>
@@ -56,8 +58,8 @@ export default function AboutMe() {
               <button>Express.js</button>
               <button>Redux</button>
               <button>jQuery</button>
+              <button>Bootstrap</button>
               <button>PostgreSQL</button>
-              <button>Tailwind CSS</button>
               <button>Flutter</button>
               <button>FireBase</button>
               <button>AWS</button>

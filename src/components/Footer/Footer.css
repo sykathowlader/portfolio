@@ -1,20 +1,17 @@
 /* Footer.css */
 .footer {
   display: flex;
-  justify-content: space-between; /* Pushes children to opposite ends */
-  align-items: center; /* Vertically centers the content */
-  padding: 1rem 2rem; /* Adds some padding for breathing room */
-  background-color: var(
-    --bg-shade
-  ); /* Light gray background - customize as needed */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-shade);
   border-top: 1px solid #e0e0e0; /* Subtle top border */
 }
 
-/* Style the paragraph (All rights reserved text) */
 .footer p {
-  margin: 0; /* Removes default paragraph margin */
-  font-size: 0.9rem; /* Slightly smaller text */
-  color: var(--black); /* Dark gray - match your theme */
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--black);
 }
 
 /* Ensure Socials stays on the right */
