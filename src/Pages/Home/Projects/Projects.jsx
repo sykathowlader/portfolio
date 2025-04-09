@@ -19,11 +19,45 @@ import cvCnn from "../../../assets/project_images/computer_vision/cnn.png";
 import cvHogMlp from "../../../assets/project_images/computer_vision/hog_mlp.png";
 import cvHogSvm from "../../../assets/project_images/computer_vision/hog_svm.png";
 import cvPersonal from "../../../assets/project_images/computer_vision/personal.png";
+import govee1 from "../../../assets/project_images/govee/govee1.png";
+import govee2 from "../../../assets/project_images/govee/govee2.png";
 
 export default function Projects() {
   return (
     <div className="projects" id="projects">
       <h1>Projects</h1>
+      <Project
+        linkGitHub={"https://github.com/sykathowlader/govee_light_app"}
+        media={[
+          {
+            type: "image",
+            src: govee1,
+          },
+          { type: "image", src: govee2 },
+        ]}
+        title={"Smart Led light control app"}
+        description={`Developed a full-stack web application to control Govee Smart LED lights, integrating a React frontend 
+          with a Node.js and Express backend via the Govee API. Users can select from five colors—red, blue, green, yellow, 
+          and orange—each triggering a unique audio track that reflects the emotion conveyed by that color, such as 
+          intensity for red or calmness for blue. The frontend, built with React, features a responsive grid of color boxes 
+          and a turn-off button, leveraging state management to handle color selection, API requests, and audio playback in a 
+          seamless loop. The backend uses Express to handle POST requests, simultaneously updating two LED devices with RGB 
+          values or turning them off, all powered by asynchronous fetch calls to the Govee API. Sensitive data, including 
+          API keys, device MAC addresses, and model numbers, are securely stored in an .env file and accessed via 
+          the dotenv package. Deployed the backend on Render and the frontend on Vercel, utilizing environment 
+          variables for flexible API routing between local and production environments.`}
+        languageTechnology={[
+          "React",
+          "Node.js",
+          "Express",
+          "JavaScript",
+          "CSS",
+          "HTML",
+        ]}
+        externalLink={
+          "https://govee-light-app-sykathowladers-projects.vercel.app/"
+        }
+      ></Project>
       <Project
         linkGitHub={"https://github.com/sykathowlader/study_buddy_fl"}
         media={[

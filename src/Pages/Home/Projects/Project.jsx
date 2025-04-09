@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./Project.css";
-import { PiInfo } from "react-icons/pi";
+import { TbExternalLink } from "react-icons/tb";
+
 import { FaGithub } from "react-icons/fa";
 
 export default function Project({
   media, // Array containing both images and videos
   description,
   title,
-
+  externalLink,
   linkGitHub,
   languageTechnology,
 }) {
@@ -80,8 +81,13 @@ export default function Project({
         </div>
         <div className="description-buttons">
           <a href={linkGitHub} target="_blank">
-            <FaGithub></FaGithub>{" "}
+            <FaGithub></FaGithub>
           </a>
+          {externalLink && (
+            <a href={externalLink} target="_blank" rel="noopener noreferrer">
+              <TbExternalLink />
+            </a>
+          )}
         </div>
       </div>
     </div>
