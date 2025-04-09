@@ -37,8 +37,8 @@ export default function Projects() {
         ]}
         title={"Smart Led light control app"}
         description={`Developed a full-stack web application to control Govee Smart LED lights, integrating a React frontend 
-          with a Node.js and Express backend via the Govee API. Users can select from five colors—red, blue, green, yellow, 
-          and orange—each triggering a unique audio track that reflects the emotion conveyed by that color, such as 
+          with a Node.js and Express backend via the Govee API. Users can select from five colors, red, blue, green, yellow, 
+          and orange, each triggering a unique audio track that reflects the emotion conveyed by that color, such as 
           intensity for red or calmness for blue. The frontend, built with React, features a responsive grid of color boxes 
           and a turn-off button, leveraging state management to handle color selection, API requests, and audio playback in a 
           seamless loop. The backend uses Express to handle POST requests, simultaneously updating two LED devices with RGB 
