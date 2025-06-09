@@ -21,11 +21,79 @@ import cvHogSvm from "../../../assets/project_images/computer_vision/hog_svm.png
 import cvPersonal from "../../../assets/project_images/computer_vision/personal.png";
 import govee1 from "../../../assets/project_images/govee/govee1.png";
 import govee2 from "../../../assets/project_images/govee/govee2.png";
+import gaz1 from "../../../assets/project_images/gazetteer/gazetteer.png";
+import gaz2 from "../../../assets/project_images/gazetteer/gaz_stats.png";
+import gaz3 from "../../../assets/project_images/gazetteer/gaz_time.png";
+import gaz4 from "../../../assets/project_images/gazetteer/gaz_currency.png";
+import gaz5 from "../../../assets/project_images/gazetteer/gaz_weather.png";
+import gaz6 from "../../../assets/project_images/gazetteer/gaz_news.png";
+import com1 from "../../../assets/project_images/company_directory/com1.png";
+import com2 from "../../../assets/project_images/company_directory/com2.png";
+import com3 from "../../../assets/project_images/company_directory/com3.png";
+import com4 from "../../../assets/project_images/company_directory/com4.png";
+import com5 from "../../../assets/project_images/company_directory/com5.png";
+import com6 from "../../../assets/project_images/company_directory/com6.png";
 
 export default function Projects() {
   return (
     <div className="projects" id="projects">
       <h1>Projects</h1>
+      <Project
+        linkGitHub={
+          "https://github.com/sykathowlader/sykatHowlader/tree/main/project2"
+        }
+        media={[
+          { type: "image", src: com1 },
+          { type: "image", src: com2 },
+          { type: "image", src: com3 },
+          { type: "image", src: com4 },
+          { type: "image", src: com5 },
+          { type: "image", src: com6 },
+        ]}
+        title={"Company Directory Web Application"}
+        description={`Developed a dynamic company directory web application using HTML, JavaScript, PHP, and MySQL, 
+          enabling efficient management of personnel, departments, and locations. Features include real-time search, 
+          filtering by department or location, and CRUD operations with a responsive Bootstrap interface. 
+          Deployed on a web server, integrating frontend interactivity with a robust backend database.`}
+        languageTechnology={[
+          "HTML",
+          "JavaScript",
+          "CSS",
+          "Bootstrap",
+          "PHP",
+          "MySQL",
+        ]}
+        externalLink={"https://sykat.infy.uk/project2"}
+      ></Project>
+
+      <Project
+        linkGitHub={
+          "https://github.com/sykathowlader/sykatHowlader/tree/main/project1"
+        }
+        media={[
+          { type: "image", src: gaz1 },
+          { type: "image", src: gaz2 },
+          { type: "image", src: gaz3 },
+          { type: "image", src: gaz4 },
+          { type: "image", src: gaz5 },
+          { type: "image", src: gaz6 },
+        ]}
+        title={"Gazetteer Web Application"}
+        description={`Developed a Gazetteer web app with an interactive Leaflet map to explore country details, 
+          including country statistics, live weather, currency conversion, news, local time, airports, and cities. 
+          Built with HTML, CSS, JavaScript, Bootstrap, and PHP, integrating APIs like REST Countries for country data, 
+          OpenWeatherMap, ExchangeRate-API, NewsAPI, TimeZoneDB, and Geonames for accurate data. 
+          Enhanced with Leaflet MarkerCluster and ExtraMarkers for seamless, engaging map navigation.`}
+        languageTechnology={[
+          "HTML",
+          "JavaScript",
+          "CSS",
+          "Bootstrap",
+          "PHP",
+          "Leaflet",
+        ]}
+        externalLink={"https://sykat.infy.uk/project1"}
+      ></Project>
       <Project
         linkGitHub={"https://github.com/sykathowlader/govee_light_app"}
         media={[
