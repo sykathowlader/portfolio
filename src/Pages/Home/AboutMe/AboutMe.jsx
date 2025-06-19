@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="description">
           <h2>Get to know me!</h2>
           <p>
-            Hi, I’m Sykat Howlader, an aspiring <span>software developer</span>{" "}
+            Hi, I am Sykat Howlader, an aspiring <span>software developer</span>{" "}
             with a strong foundation in <span>full-stack</span> development
             technologies like React, Node.js. I enjoy tackling challenges and
             building efficient, scalable solutions.{" "}
