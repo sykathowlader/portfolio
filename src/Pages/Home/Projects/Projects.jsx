@@ -33,6 +33,8 @@ import com3 from "../../../assets/project_images/company_directory/com3.png";
 import com4 from "../../../assets/project_images/company_directory/com4.png";
 import com5 from "../../../assets/project_images/company_directory/com5.png";
 import com6 from "../../../assets/project_images/company_directory/com6.png";
+import com7 from "../../../assets/project_images/company_directory/com7.png";
+import com8 from "../../../assets/project_images/company_directory/com8.png";
 
 export default function Projects() {
   return (
@@ -49,6 +51,8 @@ export default function Projects() {
           { type: "image", src: com4 },
           { type: "image", src: com5 },
           { type: "image", src: com6 },
+          { type: "image", src: com7 },
+          { type: "image", src: com8 },
         ]}
         title={"Company Directory Web Application"}
         description={`Developed a dynamic company directory web application using HTML, JavaScript, PHP, and MySQL, 
