@@ -76,6 +76,15 @@ export default function NavBar() {
           >
             <button>Certifications</button>
           </Link>
+          <Link
+            to="/contact"
+            onClick={() => {
+              moveToTopPage();
+              toggleMenu();
+            }}
+          >
+            <button>Contact</button>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -93,6 +102,9 @@ export default function NavBar() {
             </div>
             <Link to="/certifications" onClick={moveToTopPage}>
               <button>Certifications</button>
+            </Link>
+            <Link to="/contact" onClick={moveToTopPage}>
+              <button>Contact</button>
             </Link>
           </div>
 
