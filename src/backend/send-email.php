@@ -40,6 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
+    // Additional validation for input length
+    if (strlen($name) > 100 || strlen($email) > 100 || strlen($message) > 1000) {
+        echo json_encode(['success' => false, 'message' => 'Input too long']);
+        exit;
+    }
+
     $mail = new PHPMailer(true);
 
     try {
@@ -47,14 +53,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = '77scema77@gmail.com'; //  Gmail address
-        $mail->Password = 'ipmy cdeg jasp qsocc'; //  Gmail App Password
+        $mail->Username = '77scema77@gmail.com';
+        $mail->Password = 'ipmy cdeg kfhm qsoc';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Email settings
         $mail->setFrom($email, $name);
-        $mail->addAddress('77scema77@gmail.com'); //  receiving email
+        $mail->addAddress('77scema77@gmail.com');
         $mail->addReplyTo($email, $name);
 
         // Content

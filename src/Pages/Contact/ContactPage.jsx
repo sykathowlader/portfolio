@@ -39,6 +39,7 @@ export default function ContactPage() {
         );
       }
     } catch (error) {
+      console.error("Fetch error:", error);
       setStatus("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
