@@ -7,10 +7,12 @@ require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
 
 // CORS headers
-$allowed_origins = ['http://localhost:3000', 'https://sykat.com'];
+$allowed_origins = ['http://localhost:3000', 'https://sykat.com', 'https://www.sykat.com'];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed_origins)) {
     header("Access-Control-Allow-Origin: $origin");
+} else {
+    header("Access-Control-Allow-Origin: *"); 
 }
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
