@@ -22,7 +22,7 @@ export default function ContactPage() {
 
     try {
       const response = await fetch(
-        "https://sykat.unaux.com/api/send-email.php",
+        "https://sykat.unaux.com/api/send-email.php", // API endpoint
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
