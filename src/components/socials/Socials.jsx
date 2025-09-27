@@ -22,14 +22,6 @@ export default function Socials() {
       >
         <FaLinkedin className="linkedin-icon" />
       </a>
-      <a
-        href="mailto:sykat12@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Email"
-      >
-        <MdEmail className="email-icon" />
-      </a>
     </div>
   );
 }

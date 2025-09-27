@@ -97,7 +97,7 @@
 }
 
 .contact-form button:hover {
-  background-color: var(--secondary-dark);
+  background-color: var(--secondary-hover);
 }
 
 .contact-form button:disabled {

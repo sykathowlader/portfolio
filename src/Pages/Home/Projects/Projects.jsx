@@ -35,11 +35,61 @@ import com5 from "../../../assets/project_images/company_directory/com5.png";
 import com6 from "../../../assets/project_images/company_directory/com6.png";
 import com7 from "../../../assets/project_images/company_directory/com7.png";
 import com8 from "../../../assets/project_images/company_directory/com8.png";
+import council_dashboard from "../../../assets/project_images/tableau/council_house/Dashboard.png";
 
 export default function Projects() {
   return (
     <div className="projects" id="projects">
       <h1>Projects</h1>
+      <Project
+        title={"Council Housing Waiting Lists in London (Tableau Project)"}
+        linkGitHub={"https://github.com/sykathowlader/Tableau"}
+        media={[{ type: "image", src: council_dashboard }]}
+        description={`Analyzed housing waiting list data from data.london.gov.uk, transforming it with Power Query 
+          and joining it to London borough shapefiles. Built an interactive Tableau dashboard with maps, line charts,
+          heatmaps, and histograms to visualize trends. Key insights: Newham, Lambeth, Tower Hamlets, Brent, and
+          Lewisham had the highest demand; central boroughs showed lower numbers; and Brent saw a sharp increase in 2021.`}
+        languageTechnology={["Tableau", "Excel", "Power Query"]}
+        externalLink={
+          "https://public.tableau.com/app/profile/sykat.howlader/viz/HouseholdsWaitingforCouncilHousinginLondon/Dashboard1?publish=yes"
+        }
+      ></Project>
+      <Project
+        title={"Computer Vision - Face Covering Detection Models"}
+        linkGitHub={
+          "https://github.com/sykathowlader/computer_vision_mask_detection"
+        }
+        media={[
+          {
+            type: "image",
+            src: cvHogSvm,
+          },
+          {
+            type: "image",
+            src: cvHogMlp,
+          },
+          {
+            type: "image",
+            src: cvCnn,
+          },
+          {
+            type: "image",
+            src: cvPersonal,
+          },
+          {
+            type: "youtube",
+            src: "Ko88Wd4Ttqw",
+          },
+        ]}
+        description={`For my Computer Vision module coursework, I developed and evaluated three 
+          machine learning models to predict face mask usage from images. The project involved 
+          classifying faces into three categories: no mask, correctly worn mask, and improperly 
+          worn mask. I implemented a Support Vector Machine (SVM) and Multi-layer Perceptron (MLP) 
+          using HOG feature descriptors, alongside a Convolutional Neural Network (CNN). 
+          Technologies used included Python, OpenCV for preprocessing, scikit-learn 
+          for SVM and MLP, and PyTorch for the CNN. The CNN achieved the highest accuracy at 92%, though all models faced challenges with class imbalance.`}
+        languageTechnology={["Python", "OpenCv", "Scikit-learn", "PyTorch"]}
+      ></Project>
       <Project
         linkGitHub={
           "https://github.com/sykathowlader/sykatHowlader/tree/main/project2"
@@ -151,42 +201,7 @@ export default function Projects() {
             seamlessly`}
         languageTechnology={["Flutter", "Dart", "Firebase"]}
       ></Project>
-      <Project
-        title={"Computer Vision - Face Covering Detection Models"}
-        linkGitHub={
-          "https://github.com/sykathowlader/computer_vision_mask_detection"
-        }
-        media={[
-          {
-            type: "image",
-            src: cvHogSvm,
-          },
-          {
-            type: "image",
-            src: cvHogMlp,
-          },
-          {
-            type: "image",
-            src: cvCnn,
-          },
-          {
-            type: "image",
-            src: cvPersonal,
-          },
-          {
-            type: "youtube",
-            src: "Ko88Wd4Ttqw",
-          },
-        ]}
-        description={`For my Computer Vision module coursework, I developed and evaluated three 
-          machine learning models to predict face mask usage from images. The project involved 
-          classifying faces into three categories: no mask, correctly worn mask, and improperly 
-          worn mask. I implemented a Support Vector Machine (SVM) and Multi-layer Perceptron (MLP) 
-          using HOG feature descriptors, alongside a Convolutional Neural Network (CNN). 
-          Technologies used included Python, OpenCV for preprocessing, scikit-learn 
-          for SVM and MLP, and PyTorch for the CNN. The CNN achieved the highest accuracy at 92%, though all models faced challenges with class imbalance.`}
-        languageTechnology={["Python", "OpenCv", "Scikit-learn", "PyTorch"]}
-      ></Project>
+
       <Project
         linkGitHub={"https://github.com/sykathowlader/air_via_system"}
         title={"Plane ticket sales system"}
