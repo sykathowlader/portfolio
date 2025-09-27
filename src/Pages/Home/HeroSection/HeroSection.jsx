@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div className="hero-content">
           <p className="hero-greeting">Hi, I'm</p>
           <h1 className="hero-name">Sykat Howlader</h1>
-          <h2 className="hero-role">Full-Stack Developer</h2>
+          <h2 className="hero-role">Data Scientist & AI Engineer</h2>
           <Socials></Socials>
 
           {/* Buttons */}

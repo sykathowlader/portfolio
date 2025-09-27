@@ -11,6 +11,9 @@ import phpImg from "../../assets/certifications/codecademy/php.png";
 import BootstrapImg from "../../assets/certifications/codecademy/bootstrap.png";
 import javaImg from "../../assets/certifications/codecademy/java.png";
 import cSharpImg from "../../assets/certifications/codecademy/c_sharp.png";
+import pandasImg from "../../assets/certifications/codecademy/pandas.png";
+import vizImg from "../../assets/certifications/codecademy/viz.png";
+import numpyImg from "../../assets/certifications/codecademy/numpy.png";
 
 export default function CertificationPage() {
   return (
@@ -18,6 +21,40 @@ export default function CertificationPage() {
       <div className="certification-page">
         <h1 className="certifications-title">Explore my certifications</h1>
         <div className="certifications">
+          <Certification
+            title={"Visualize Data with Python: Matplotlib & Seaborn"}
+            imageUrl={vizImg}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/a5aaf73bec9640739ee69976d4a75704"
+            }
+            description={`Completed a practical course on data visualization using Matplotlib 
+              and Seaborn, learning to create line charts, bar charts, histograms, heatmaps, and scatter 
+              plots to explore and communicate insights from datasets effectively.`}
+            skills={["Matplotlib", "Seaborn", "Data Visualization"]}
+          ></Certification>
+          <Certification
+            title={"Learn Statistics with NumPy"}
+            imageUrl={numpyImg}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/43135f7494712f4c3b1ced1a55be7be1"
+            }
+            description={`Completed a comprehensive course on statistics using NumPy, 
+            covering descriptive statistics, probability distributions, hypothesis testing, 
+            and data visualization techniques to analyze and interpret data effectively.`}
+            skills={["NumPy", "Statistics"]}
+          ></Certification>
+          <Certification
+            title={"Learn Data Analysis with Pandas"}
+            imageUrl={pandasImg}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/95dd3ed417d7d6c449afffc6401b310a"
+            }
+            description={`Completed a hands-on course covering data cleaning, transformation, and 
+            visualization using Pandas. Gained practical experience with dataframes, filtering, grouping, 
+            merging, and statistical analysis to draw insights from real-world datasets.`}
+            skills={["Pandas", "Data Analysis"]}
+          ></Certification>
+
           <Certification
             title={"Learn C#"}
             imageUrl={cSharpImg}
