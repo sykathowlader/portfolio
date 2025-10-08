@@ -14,6 +14,7 @@ import cSharpImg from "../../assets/certifications/codecademy/c_sharp.png";
 import pandasImg from "../../assets/certifications/codecademy/pandas.png";
 import vizImg from "../../assets/certifications/codecademy/viz.png";
 import numpyImg from "../../assets/certifications/codecademy/numpy.png";
+import r_language from "../../assets/certifications/codecademy/r_language.png";
 
 export default function CertificationPage() {
   return (
@@ -21,6 +22,24 @@ export default function CertificationPage() {
       <div className="certification-page">
         <h1 className="certifications-title">Explore my certifications</h1>
         <div className="certifications">
+          <Certification
+            title={"Analyze Data with R"}
+            imageUrl={r_language}
+            link={
+              "https://www.codecademy.com/profiles/SykatHowlader/certificates/5ea997e832f098001378ca08"
+            }
+            description={`Completed a comprehensive Data Analysis with R Programming course, 
+              gaining hands-on experience in data manipulation, cleaning, aggregation, and joining tables. 
+              Proficient in statistical analysis, hypothesis testing, and creating insightful visualizations with ggplot2.`}
+            skills={[
+              "R Programming language",
+              "Data Analysis",
+              "data manipulation",
+              "data cleaning",
+              "data visualization",
+              "ggplot2",
+            ]}
+          ></Certification>
           <Certification
             title={"Visualize Data with Python: Matplotlib & Seaborn"}
             imageUrl={vizImg}
